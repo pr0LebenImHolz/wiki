@@ -23,5 +23,8 @@ Inzwischen existiert das Pr0jekt seit Anfang August 2019.
 - 07.09.2020 \[NEU\] Minecraft Server hat wieder ein geiles Icon (Props an [>_ DieSchwitzritze](https://pr0gramm.com/user/DieSchwitzritze ">_ DieSchwitzritze"))
 
 </div>
-<img src="./image/ein-tag-im-holz.png"  class="split-40" />
+<div class="split-40" style="position:relative;">
+<img src="./image/ein-tag-im-holz.png" style="width:100%" />
+<a href="https://pr0gramm.com/user/5kWBassMachine/pr0jekt-lebenimholz/4063556" target="_blank" style="position:absolute;right:10px;bottom:10px;">&gt;_ Kompletten Post ansehen</a>
+</div>
 </div>
