@@ -1,0 +1,96 @@
+.split > .split-10 {
+	float: left;
+	width: 10%;
+}
+.split > .split-20 {
+	float: left;
+	width: 20%;
+}
+.split > .split-30 {
+	float: left;
+	width: 30%;
+}
+.split > .split-40 {
+	float: left;
+	width: 40%;
+}
+.split > .split-50 {
+	float: left;
+	width: 50%;
+}
+.split > .split-60 {
+	float: left;
+	width: 60%;
+}
+.split > .split-70 {
+	float: left;
+	width: 70%;
+}
+.split > .split-80 {
+	float: left;
+	width: 80%;
+}
+.split > .split-90 {
+	float: left;
+	width: 90%;
+}
+
+.recipe {
+	position: relative;
+	display: inline-flex;
+	flex-flow: row;
+	align-items: center;
+	margin: 10px;
+	padding: 4px;
+	border-radius: 4px;
+	background-color: var(--col-pr0-real-gray-accent);
+}
+.recipe > .title {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	margin: 4px;
+	color: var(--col-text-gray);
+}
+.recipe > table.inputs {
+	border-collapse: collapse;
+}
+.recipe > div.inputs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.recipe > .arrow {
+	display: inline-block;
+	width: 32px;
+	margin: 4px;
+	padding: 2px;
+	font-size: 32px;
+	text-align: center;
+}
+.recipe > .arrow::before {
+	content: "➜";
+	color: var(--col-text-gray);
+}
+.recipe > table.inputs td,
+.recipe > div.inputs > a,
+.recipe > .outputs {
+	display: inline-block;
+	background-color: var(--col-pr0-real-gray);
+	border: 2px solid #000000;
+	width: 32px;
+	height: 32px;
+	margin: 4px;
+	padding: 2px;
+}
+.recipe > .inputs img,
+.recipe > .outputs img {
+	width: 32px;
+	height: 32px;
+}
+.recipe > div.inputs > .flame {
+	width: 32px;
+	height: 32px;
+	background: url(../image/furnace_flames.svg) no-repeat center center;
+	background-size: contain;
+}

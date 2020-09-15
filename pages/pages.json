@@ -1,0 +1,44 @@
+[
+	{
+		"type": "page",
+		"ref": "home",
+		"name": "Hauptseite"
+	},
+	{
+		"type": "page",
+		"ref": "installation",
+		"name": "Installation"
+	},
+	{
+		"type": "page",
+		"ref": "ingame",
+		"name": "Im Spiel"
+	},
+	{
+		"type": "page",
+		"ref": "modpack",
+		"name": "Das Modpack"
+	},
+	{
+		"type": "page",
+		"ref": "resourcepack",
+		"name": "Das Resourcepack"
+	},
+	{
+		"type": "page",
+		"ref": "contributing",
+		"name": "Beim Wiki Mitwirken"
+	},
+	{
+		"type": "link",
+		"target": "_blank",
+		"ref": "https://github.com/pr0LebenImHolz",
+		"name": "GitHub"
+	},
+	{
+		"type": "link",
+		"target": "_blank",
+		"ref": "https://pr0gramm.com/new/1188217",
+		"name": "Nacktbilder von Schwitze"
+	}
+]

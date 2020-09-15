@@ -1,0 +1,120 @@
+@import url('./pr0-theme.css');
+
+:root {
+	--col-transparent: #00000000;
+	--icon-external-link: url('data:image/svg+xml,\
+	<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"> \
+		<g style="stroke:rgb(117,192,199);stroke-width:1"> \
+			<line x1="5" y1="5" x2="5" y2="14" /> \
+			<line x1="14" y1="9" x2="14" y2="14" /> \
+			<line x1="5" y1="14" x2="14" y2="14" /> \
+			<line x1="5" y1="5" x2="9" y2="5"  /> \
+			<line x1="10" y1="2" x2="17" y2="2"  /> \
+			<line x1="17" y1="2" x2="17" y2="9" /> \
+			<line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" /> \
+		</g> \
+	</svg>');
+	--icon-external-link-white: url('data:image/svg+xml,\
+	<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"> \
+		<g style="stroke:rgb(242,245,244);stroke-width:1"> \
+			<line x1="5" y1="5" x2="5" y2="14" /> \
+			<line x1="14" y1="9" x2="14" y2="14" /> \
+			<line x1="5" y1="14" x2="14" y2="14" /> \
+			<line x1="5" y1="5" x2="9" y2="5"  /> \
+			<line x1="10" y1="2" x2="17" y2="2"  /> \
+			<line x1="17" y1="2" x2="17" y2="9" /> \
+			<line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" /> \
+		</g> \
+	</svg>');
+	--icon-external-link-0range: url('data:image/svg+xml,\
+	<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"> \
+		<g style="stroke:rgb(238,77,46);stroke-width:1"> \
+			<line x1="5" y1="5" x2="5" y2="14" /> \
+			<line x1="14" y1="9" x2="14" y2="14" /> \
+			<line x1="5" y1="14" x2="14" y2="14" /> \
+			<line x1="5" y1="5" x2="9" y2="5"  /> \
+			<line x1="10" y1="2" x2="17" y2="2"  /> \
+			<line x1="17" y1="2" x2="17" y2="9" /> \
+			<line x1="10" y1="9" x2="17" y2="2" style="stroke-width:1.5" /> \
+		</g> \
+	</svg>');
+}
+
+body {
+	font: var(--font-pr0);
+	color: var(--col-pr0-text-white);
+	background-color: var(--col-pr0-real-gray);
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+a {
+	color: var(--col-pr0-text-link);
+	text-decoration: none;
+}
+a:hover {
+	color: var(--col-pr0-text-link-hover);
+	text-decoration: none;
+}
+a[target="_blank"]::after {
+	content: '';
+	background: no-repeat var(--icon-external-link);
+	padding-right: 1em;
+}
+
+#header {
+	background-color: #000;
+	background-image: url('../image/header.png');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#header > nav {
+	min-height: 56px;
+	line-height: 56px;
+	text-align: right;
+}
+
+#header > nav > a {
+	color: var(--col-pr0-text-white);
+	text-decoration: none;
+	padding: 10px;
+}
+#header > nav > a:hover {
+	color: var(--col-pr0-0range);
+}
+#header > nav > a[target="_blank"]::after {
+	content: '';
+	background: no-repeat var(--icon-external-link-white);
+	padding-right: 1em;
+}
+#header > nav > a[target="_blank"]:hover::after {
+	content: '';
+	background: no-repeat var(--icon-external-link-0range);
+	padding-right: 1em;
+}
+
+#main {
+	overflow-y: auto;
+	scrollbar-width: thin;
+	scrollbar-color: var(--col-pr0-0range) var(--col-transparent);
+	padding: 0 5%;
+}
+#main::-webkit-scrollbar-track {
+  background: none;
+}
+
+
+#main h1, h2, h3, h4, h5, h6 {
+	color: var(--col-pr0-0range);
+}
+
+#main .subheader {
+	color: var(--col-pr0-text-gray);
+	font-style: italic;
+}
