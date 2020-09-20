@@ -12,10 +12,10 @@ const Minecraft = {
 	},
 	_ITEMS: {
 		UNKNOWN: {img: "./image/missingno.png", url: "?page=items#missingno", name: "MissingNo."},
-		FUEL: {img: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/58/Coal_JE4_BE3.png/revision/latest/scale-to-width-down/150?cb=20190430040243", url: "https://minecraft.gamepedia.com/Smelting#Fuel", name: "Fuel"},
+		FUEL: {img: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/58/Coal_JE4_BE3.png/revision/latest/scale-to-width-down/150", url: "https://minecraft.gamepedia.com/Smelting#Fuel", name: "Fuel"},
 		VANILLA: {
-			REDSTONE_BLOCK: {img: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/26/Block_of_Redstone_JE2_BE2.png/revision/latest/scale-to-width-down/150?cb=20191230030531", url: "https://minecraft.gamepedia.com/Block_of_Redstone", name: "Block of Redstone"},
-			NETHER_STAR: {img: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b3/Nether_Star.gif/revision/latest/scale-to-width-down/160?cb=20200428015752", url: "https://minecraft.gamepedia.com/Nether_Star", name: "Nether Star"}
+			REDSTONE_BLOCK: {img: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/26/Block_of_Redstone_JE2_BE2.png/revision/latest/scale-to-width-down/150", url: "https://minecraft.gamepedia.com/Block_of_Redstone", name: "Block of Redstone"},
+			NETHER_STAR: {img: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b3/Nether_Star.gif/revision/latest/scale-to-width-down/160", url: "https://minecraft.gamepedia.com/Nether_Star", name: "Nether Star"}
 		},
 		BIOMESOPLENTY: {
 			GEMORE_1: {img: "https://ftbwiki.org/images/1/13/Grid_Block_of_Amethyst_%28Biomes_O%27_Plenty%29.png", url: "https://ftbwiki.org/Block_of_Amethyst_(Biomes_O%27_Plenty)", name: "Block of Amethyst"}
