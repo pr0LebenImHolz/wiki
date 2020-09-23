@@ -11,14 +11,13 @@
 		<link rel=icon href="./image/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="./style/main.css">
 		<link rel="stylesheet" type="text/css" href="./style/page.css">
-		<link rel="stylesheet" href="../LiH-Resources/RecipeAPI/test.css" />
+		<link rel="stylesheet" href="https://pr0lebenimholz.github.io/LiH-Resources/RecipeAPI/test.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="./script/navigation.js"></script>
-		<script src="./script/page.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="../LiH-Resources/RecipeAPI/RecipeAPI.js"></script>
-		<script src="../LiH-Resources/RecipeAPI/test.js"></script>
+		<script src="https://pr0lebenimholz.github.io/LiH-Resources/RecipeAPI/RecipeAPI.js"></script>
+		<script src="https://pr0lebenimholz.github.io/LiH-Resources/RecipeAPI/test.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.0/markdown-it.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.2/markdown-it-footnote.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
@@ -32,8 +31,6 @@
 			};
 			$(document).ready(() => {
 				Navigation.build("https://pr0lebenimholz.github.io/wiki/pages/pages.json");
-				Page.init(DEFAULT_PAGE, ERROR_PAGES, "https://pr0lebenimholz.github.io/wiki/pages/", document.title + " » ");
-				Page.handleRequest();
 			});
 			function testPage(content) {
 				$("#main").html(Page.parsePage(content));
