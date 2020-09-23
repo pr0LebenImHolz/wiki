@@ -106,7 +106,7 @@ a[target="_blank"]::after {
 	padding: 0 5%;
 }
 #main::-webkit-scrollbar-track {
-  background: none;
+	background: none;
 }
 
 
