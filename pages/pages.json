@@ -15,6 +15,11 @@
 		"name": "Im Spiel"
 	},
 	{
+		"type": "link",
+		"ref": "/wiki/items.html",
+		"name": "Items"
+	},
+	{
 		"type": "page",
 		"ref": "modpack",
 		"name": "Das Modpack"

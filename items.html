@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: https://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Leben im Holz Wiki</title>
+		<meta property="og:title" content="Leben im Holz Wiki » Items" />
+		<meta property="og:image" content="https://pr0lebenimholz.github.io/wiki/image/favicon.png" />
+		<meta property="og:locale" content="de_DE" />
+		<meta property="og:description" content="Das Wiki zum Leben im Holz Projekt" />
+		<link rel=icon href="./image/favicon.png" type="image/png">
+		<link rel="stylesheet" type="text/css" href="./style/main.css">
+		<link rel="stylesheet" type="text/css" href="./style/page.css">
+		<link rel="stylesheet" href="../LiH-Resources/RecipeAPI/test.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="./script/navigation.js"></script>
+		<script src="./script/page.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="../LiH-Resources/RecipeAPI/RecipeAPI.js"></script>
+		<script src="../LiH-Resources/RecipeAPI/test.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.0/markdown-it.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-footnote/3.0.2/markdown-it-footnote.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+		<script>
+			const DEFAULT_PAGE = "home";
+			const ERROR_PAGES = {
+				ERROR_BAD_REQUEST: "<h1>Error 400 - Ungültige Anfrage</h1><p>Die gesendeten Daten konnten nicht interpretiert werden.<br><a href=\"?\">Hier gehts zur Hauptseite</a></p>",
+				ERROR_NOT_FOUND: "<h1>Error 404 - Nicht gefunden</h1><p>Diese Seite konnte nicht gefunden werden.<br><a href=\"?\">Hier gehts zur Hauptseite</a></p>",
+				ERROR_INTERNAL: "<h1>Error 500 - Interner Server Error</h1><p>Irgendwas stimmt mit GitHub nicht.<br><a href=\"?\">Hier gehts zur Hauptseite</a></p>",
+				ERROR_NOT_IMPLEMENTED: "<h1>Error 501 - Nicht Implementiert</h1><p>Dieses Feature wurde noch nicht implementiert oder befindet sich im Auf- bzw. Umbau.<br><a href=\"?\">Hier gehts zur Hauptseite</a></p>"
+			};
+			$(document).ready(() => {
+				Navigation.build("https://pr0lebenimholz.github.io/wiki/pages/pages.json");
+				Page.init(DEFAULT_PAGE, ERROR_PAGES, "https://pr0lebenimholz.github.io/wiki/pages/", document.title + " » ");
+				Page.handleRequest();
+			});
+			function testPage(content) {
+				$("#main").html(Page.parsePage(content));
+				Page.parseContent();
+			}
+		</script>
+	</head>
+	<body>
+		<header id="header">
+			<nav id="navigation">
+			</nav>
+		</header>
+		<main id="main">
+			<h1>Zusätzliche Items &amp; Rezepte</h1>
+			<script>RecipeAPI.init("https://pr0lebenimholz.github.io/LiH-Resources/RecipeAPI/recipes.json", true);document.write(parseRecipes(RecipeAPI.parseRecipes(RecipeAPI.getRecipes()), "https://pr0lebenimholz.github.io/LiH-Resources/RecipeAPI/items.json"));</script>
+		</main>
+	</body>
+</html>
