@@ -6,7 +6,7 @@ const Navigation = {
 				var anchor;
 				switch(data[i].type) {
 					case "page":
-						anchor = `<a href="/?page=${data[i].ref}" data-href="${data[i].ref}">${data[i].name}</a>`;
+						anchor = `<a href="./?page=${data[i].ref}" data-href="${data[i].ref}">${data[i].name}</a>`;
 						break;
 					case "link":
 						if (data[i].target) {
