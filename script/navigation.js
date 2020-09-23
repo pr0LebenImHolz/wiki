@@ -19,7 +19,7 @@ const Navigation = {
 				items.push(anchor);
 			}
 			$("#navigation").html(items.join(""));
-			$("#navigation > a[href^='?']").on("click", Page.navigate);
+			if (typeof Page !== 'undefined') $("#navigation > a[href^='?']").on("click", Page.navigate);
 		});
 	}
 };
